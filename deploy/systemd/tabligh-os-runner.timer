@@ -1,0 +1,10 @@
+[Unit]
+Description=Run tabligh-os queue processor every 15 minutes
+
+[Timer]
+OnCalendar=*:0/15
+Persistent=true
+Unit=tabligh-os-runner.service
+
+[Install]
+WantedBy=timers.target

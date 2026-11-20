@@ -1,0 +1,10 @@
+[Unit]
+Description=tabligh-os Scheduled Queue Runner
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/github/tabligh-os
+EnvironmentFile=-%h/github/tabligh-os/.env
+Environment=NODE_OPTIONS=--no-warnings
+ExecStart=/usr/bin/env node dist/cli.js run

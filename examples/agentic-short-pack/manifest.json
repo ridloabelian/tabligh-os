@@ -1,0 +1,14 @@
+{
+  "episodeId": "ep-2026-short-faststart-demo",
+  "title": "Kenapa Agentic Publishing Wajib Memakai Physical Approval Gate",
+  "pillar": "Tabligh",
+  "hook": "Otomasi penuh di platform anti-bot justru memicu shadowban — ini arsitektur amannya.",
+  "summary": "Tabligh OS memisahkan kanal Official API (otomatis & terjadwal) dari kanal berisiko tinggi seperti TikTok Web yang berhenti di PENDING_HUMAN_CLICK.",
+  "canonicalUrl": "https://ridlo.id/notes/physical-approval-gate",
+  "tags": ["aiagent", "tablighos", "contentops", "typescript"],
+  "videoPath": "./sample-faststart.mp4",
+  "width": 1080,
+  "height": 1920,
+  "durationSec": 48,
+  "useTrendingAudio": true
+}

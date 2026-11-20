@@ -1,0 +1,45 @@
+{
+  "name": "tabligh-os",
+  "version": "0.1.0",
+  "description": "Agentic Omnichannel Content Distribution, Repurposing & Human-Governed Publishing OS (Hybrid Official API + Physical Approval Gate)",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "tabligh": "./dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "NODE_OPTIONS='--no-warnings' tsx watch src/cli.ts serve --port 8791",
+    "start": "NODE_OPTIONS='--no-warnings' node dist/cli.js serve --port 8791",
+    "demo": "NODE_OPTIONS='--no-warnings' tsx src/cli.ts serve --demo --port 8791",
+    "tabligh": "NODE_OPTIONS='--no-warnings' tsx src/cli.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "NODE_OPTIONS='--no-warnings' vitest run"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  },
+  "keywords": [
+    "agentic-ai",
+    "content-distribution",
+    "omnichannel",
+    "human-in-the-loop",
+    "publishing",
+    "hono",
+    "sqlite",
+    "typescript"
+  ]
+}

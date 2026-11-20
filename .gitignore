@@ -1,0 +1,30 @@
+# Dependencies & build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Local databases & staging packets
+data/
+*.db
+*.db-shm
+*.db-wal
+staging/
+
+# Environment & credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Generated demo/test artifacts
+publish.generated.json

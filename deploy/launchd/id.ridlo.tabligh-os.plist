@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>id.ridlo.tabligh-os</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>dist/cli.js</string>
+    <string>serve</string>
+    <string>--port</string>
+    <string>8791</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/YOUR_USER/github/tabligh-os</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PORT</key>
+    <string>8791</string>
+    <key>NODE_OPTIONS</key>
+    <string>--no-warnings</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/tmp/tabligh-os.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/tabligh-os.stderr.log</string>
+</dict>
+</plist>

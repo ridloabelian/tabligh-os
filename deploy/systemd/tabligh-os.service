@@ -1,0 +1,17 @@
+[Unit]
+Description=tabligh-os Control Plane HTTP Server (:8791)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/github/tabligh-os
+EnvironmentFile=-%h/github/tabligh-os/.env
+Environment=PORT=8791
+Environment=NODE_OPTIONS=--no-warnings
+ExecStart=/usr/bin/env node dist/cli.js serve --port 8791
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
